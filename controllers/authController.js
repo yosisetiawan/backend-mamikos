@@ -26,11 +26,11 @@ exports.signup = (req, res) => {
 }
 
 exports.login = (req, res) => {
-    const {username, password} = req.body
+    const {email, password} = req.body
 
     const matchPassword = sha1(password)
 
-    Users.findOne({where: {username : username, password: matchPassword}, attributes : ['id','email','name']})
+    Users.findOne({where: {email : email, password: matchPassword}, attributes : ['id','email','name']})
     .then(user => {
         if(user){
             const token = jwt.sign({ id : user.id}, 'mamikos-clone')
