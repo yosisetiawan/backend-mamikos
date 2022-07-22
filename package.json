@@ -32,7 +32,7 @@
     "express-group-routes": "^1.1.0",
     "express-jwt": "^5.3.1",
     "express-validator": "^6.1.1",
-    "file-type": "^12.2.0",
+    "file-type": "^16.5.4",
     "fs": "0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "multer": "^1.4.2",
